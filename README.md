@@ -27,3 +27,39 @@ server.port = 8080
 ```
 - Make sure to check the POX.XML after setting up the project.
 - Setup MySQL workbench by reffering to yt videos or [docs](https://dev.mysql.com/doc/workbench/en/wb-installing.html)
+
+## API Endpoints
+
+- **GET - /employee/getall**
+
+  Gets all the users !
+
+  ![all](results/getAll.png)
+
+- **GET - /employee?id=**
+
+  To get the employee by Id(primary key)
+
+  ![post](results/getById.png)
+
+- **POST - /employee/add**
+  
+   To add employee's data in the database by POST functionality.
+
+  ![id-user](results/post.png)
+
+- **PUT -/employee/update/<queries>**
+
+  To update any information about the user , query in the changes. Example : ```www.localhost:8080/employee/id=1?&contact=1234567891```
+
+  ![update](results/update.png)
+
+- **DELETE -/employee/delete?id=**
+
+   To delete the user by their unique ID in db.
+
+  ![delete](results/Delete.png)
+
+
+## SQL WorkBench Console : 
+![image](https://github.com/lgsurith/employee-springapp/assets/117572209/2c04b921-8d13-448f-ade4-eac9238cbeb6)
