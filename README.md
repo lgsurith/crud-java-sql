@@ -30,31 +30,31 @@ server.port = 8080
 
 ## API Endpoints
 
-- **GET - /employee/getall**
+- **GET - ```/employee/getall```**
 
   Gets all the users !
 
   ![all](results/getAll.png)
 
-- **GET - /employee?id=**
+- **GET - ```/employee?id=```**
 
   To get the employee by Id(primary key)
 
   ![post](results/getById.png)
 
-- **POST - /employee/add**
+- **POST - ```/employee/add```**
   
    To add employee's data in the database by POST functionality.
 
   ![id-user](results/post.png)
 
-- **PUT -/employee/update/<queries>**
+- **PUT -```/employee/update/<queries>```**
 
   To update any information about the user , query in the changes. Example : ```www.localhost:8080/employee/id=1?&contact=1234567891```
 
   ![update](results/update.png)
 
-- **DELETE -/employee/delete?id=**
+- **DELETE -```/employee/delete?id=```**
 
    To delete the user by their unique ID in db.
 
