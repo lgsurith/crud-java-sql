@@ -45,6 +45,16 @@ public class employee_controller {
         return employee;
     }
 
+    //get a user by specifi employee id
+    @GetMapping()
+    public Employee getEmployeeById(@RequestParam Integer id){
+        if(employerepo.existsById(id)){
+            return employerepo.findById(id).get();
+        }else{
+            throw new RuntimeException("Employee not found with id: " + id);
+        }
+    }
+
     //delete by id
     @DeleteMapping("/delete")
     public String deleteEmployee(@RequestParam Integer id){
